@@ -1,5 +1,5 @@
 function ThemeToggle() {
-  return <div></div>;
+  return <div>Toggle</div>;
 }
 
 export default ThemeToggle;
