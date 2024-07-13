@@ -9,7 +9,7 @@ import Link from "next/link";
 function Sidebar() {
   const pathname = usePathname();
   return (
-    <aside className="py-4 px-8 bg-gray-100 h-full">
+    <aside className="py-4 px-8 bg-muted h-full">
       <Link href={"/"}>
         <Image src={Logo} alt="logo" className="mx-auto" priority />
       </Link>
