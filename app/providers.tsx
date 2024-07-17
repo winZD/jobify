@@ -30,7 +30,6 @@ function Providers({ children }: { children: React.ReactNode }) {
           {children}
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
-        {children}
       </ThemeProvider>
     </>
   );
