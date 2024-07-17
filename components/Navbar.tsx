@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="bg-muted py-4 sm:px-16 lg:px-24 flex px-4 items-center justify-between">
       <div>
-        <LinksDropdown></LinksDropdown>
+        <LinksDropdown />
       </div>
       <div className="flex items-center gap-x-4">
         <ModeToggle />
