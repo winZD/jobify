@@ -30,7 +30,7 @@ export async function createJobAction(
 
 type GetAllJobsTypes = {
   search?: string;
-  jobStatus: string;
+  jobStatus?: string;
   page?: number;
   limit?: number;
 };
