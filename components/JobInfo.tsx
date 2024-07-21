@@ -1,8 +1,8 @@
 function JobInfo({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <div className="flex gap-x-2 items-center">
-      {icon}
-      {text}
+      <span>{icon}</span>
+      <span suppressHydrationWarning>{text}</span>
     </div>
   );
 }

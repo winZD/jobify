@@ -16,7 +16,8 @@ import { Briefcase, CalendarDays, MapPin, RadioTower } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 function JobCard({ job }: { job: JobType }) {
-  const date = new Date(job.createdAt).toLocaleDateString();
+  const date = new Date(job?.createdAt).toLocaleDateString();
+
   return (
     <Card className="bg-muted">
       <CardHeader>
