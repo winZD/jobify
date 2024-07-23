@@ -14,9 +14,11 @@ import DeleteJobBtn from "./DeleteJobBtn";
 import JobInfo from "./JobInfo";
 import { Briefcase, CalendarDays, MapPin, RadioTower } from "lucide-react";
 import { Badge } from "./ui/badge";
+import dayjs from "dayjs";
 
 function JobCard({ job }: { job: JobType }) {
-  const date = new Date(job?.createdAt).toLocaleDateString();
+  /* const date = new Date(job?.createdAt).toLocaleDateString(); */
+  const date = dayjs(job?.createdAt).format("MMMM D, YYYY");
 
   return (
     <Card className="bg-muted">
